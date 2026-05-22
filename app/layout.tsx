@@ -9,9 +9,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Styn Hardin, BCBA | ABA Therapy Services in Asheboro, North Carolina",
+  title: "Kristyn Hardin, BCBA | ABA Therapy Services in Asheboro, North Carolina",
   description:
-    "Compassionate, evidence-based Applied Behavior Analysis therapy for children with autism spectrum disorder in Asheboro, North Carolina. Board Certified Behavior Analyst with [X] years of experience.",
+    "Compassionate, evidence-based Applied Behavior Analysis therapy for children with autism spectrum disorder in Asheboro, North Carolina. Board Certified Behavior Analyst with 10+ years of experience.",
   keywords: [
     "ABA therapy",
     "BCBA",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "child therapy",
   ],
   openGraph: {
-    title: "Styn Hardin, BCBA | ABA Therapy Services",
+    title: "Kristyn Hardin, BCBA | ABA Therapy Services",
     description:
       "Compassionate, evidence-based ABA therapy for children in Asheboro, North Carolina.",
     type: "website",

@@ -105,8 +105,8 @@ export default function HeroSection() {
           }}
         >
           {[
-            { value: "[X]+", label: "Years of Experience" },
-            { value: "[X]+", label: "Families Served" },
+            { value: "10+", label: "Years of Experience" },
+            { value: "100+", label: "Families Served" },
             { value: "BCBA", label: "Board Certified" },
           ].map(({ value, label }) => (
             <div key={label} style={{ textAlign: "center" }}>

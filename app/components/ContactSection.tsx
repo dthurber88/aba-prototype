@@ -1,16 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Send, CheckCircle, MapPin, Phone, Mail, Clock, BookUser } from "lucide-react";
 import { SectionLabel } from "./AboutSection";
 
 type FormState = "idle" | "submitting" | "success";
 
 const CONTACT_INFO = [
   { icon: MapPin, label: "Location", value: "Randolph County, North Carolina" },
-  { icon: Phone, label: "Phone", value: "([XXX]) [XXX]-[XXXX]" },
-  { icon: Mail, label: "Email", value: "hello@[domain].com" },
+  { icon: Phone, label: "Phone", value: "(336) 953-3812" },
+  { icon: Mail, label: "Email", value: "info@playabanc.com" },
   { icon: Clock, label: "Response Time", value: "Within 24 business hours" },
+  { icon: BookUser, label: "Facebook", value: "Follow us on Facebook!", href: "https://www.facebook.com/profile.php?id=100087543253864" },
 ];
 
 export default function ContactSection() {
@@ -108,7 +109,7 @@ export default function ContactSection() {
               Contact Information
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.125rem" }}>
-              {CONTACT_INFO.map(({ icon: Icon, label, value }) => (
+              {CONTACT_INFO.map(({ icon: Icon, label, value, href }) => (
                 <div key={label} style={{ display: "flex", gap: "0.875rem", alignItems: "flex-start" }}>
                   <div
                     style={{
@@ -138,9 +139,22 @@ export default function ContactSection() {
                     >
                       {label}
                     </p>
-                    <p style={{ color: "var(--text-primary)", fontSize: "0.9375rem", fontWeight: 500 }}>
-                      {value}
-                    </p>
+                    {href ? (
+                      <a
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "var(--accent-2)", fontSize: "0.9375rem", fontWeight: 500, textDecoration: "none" }}
+                        onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                        onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+                      >
+                        {value}
+                      </a>
+                    ) : (
+                      <p style={{ color: "var(--text-primary)", fontSize: "0.9375rem", fontWeight: 500 }}>
+                        {value}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -164,7 +178,7 @@ export default function ContactSection() {
                 }}
               >
                 <strong style={{ color: "var(--text-primary)" }}>Insurance & Funding:</strong>{" "}
-                We accept most major insurance plans and can assist with authorization. Private pay and waiver funding also accepted.
+                We accept Medicaid and most commercial insurances. Private pay and waiver funding also accepted.
               </p>
             </div>
           </div>
@@ -263,7 +277,7 @@ export default function ContactSection() {
                       name="phone"
                       value={form.phone}
                       onChange={handleChange}
-                      placeholder="([XXX]) [XXX]-[XXXX]"
+                      placeholder="(XXX) XXX-XXXX"
                       style={inputStyle}
                       onFocus={(e) => {
                         e.target.style.borderColor = "var(--accent-2)";

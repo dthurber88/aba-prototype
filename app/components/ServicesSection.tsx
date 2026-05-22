@@ -44,13 +44,13 @@ const SERVICES = [
       "Flexible remote consultation and parent training sessions for families who prefer virtual support or are located outside our in-person service area.",
     accentVar: "--accent-5",
   },
-  {
-    icon: HeartHandshake,
-    title: "Social Skills Groups",
-    description:
-      "Small-group sessions that build peer interaction, communication, and play skills in a structured, supportive setting. [Coming soon]",
-    accentVar: "--accent-1",
-  },
+  // {
+  //   icon: HeartHandshake,
+  //   title: "Social Skills Groups",
+  //   description:
+  //     "Small-group sessions that build peer interaction, communication, and play skills in a structured, supportive setting. [Coming soon]",
+  //   accentVar: "--accent-1",
+  // },
 ];
 
 export default function ServicesSection() {
@@ -95,13 +95,14 @@ export default function ServicesSection() {
         {/* Grid */}
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
             gap: "1.5rem",
           }}
         >
           {SERVICES.map(({ icon: Icon, title, description, accentVar }) => (
-            <div key={title} className="theme-card" style={{ padding: "1.75rem" }}>
+            <div key={title} className="theme-card" style={{ padding: "1.75rem", flex: "1 1 300px", maxWidth: "380px" }}>
               {/* Icon circle */}
               <div
                 style={{

@@ -58,7 +58,7 @@ export default function Navbar() {
             <span className="text-rainbow" style={{ marginRight: "0.25rem" }}>
               ✦
             </span>
-            Styn Hardin, BCBA
+            Kristyn Hardin, BCBA
           </span>
         </a>
 

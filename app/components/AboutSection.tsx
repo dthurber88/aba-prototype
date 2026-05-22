@@ -1,8 +1,8 @@
 const CREDENTIALS = [
   { icon: "🎓", text: "Board Certified Behavior Analyst (BCBA)" },
   { icon: "📋", text: "Licensed Behavior Analyst, NC" },
-  { icon: "🏅", text: "[X] Years Clinical Experience" },
-  { icon: "📚", text: "M.S. Applied Behavior Analysis, [University]" },
+  { icon: "🏅", text: "10+ Years Clinical Experience" },
+  // { icon: "📚", text: "M.S. Applied Behavior Analysis, [University]" },
 ];
 
 const ACCENT_COLORS = [
@@ -103,7 +103,7 @@ export default function AboutSection() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Styn Hardin, BCBA
+              Kristyn Hardin, BCBA
             </h3>
             <p
               style={{
@@ -124,8 +124,7 @@ export default function AboutSection() {
                 marginBottom: "1.25rem",
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. I became
-              passionate about ABA therapy after seeing firsthand how
+              I became passionate about ABA therapy after seeing firsthand how
               evidence-based interventions can transform the lives of children
               and families. Every child deserves a champion who believes in
               their potential.

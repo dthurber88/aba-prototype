@@ -45,7 +45,7 @@ export default function Footer() {
               <span className="text-rainbow" style={{ marginRight: "0.25rem" }}>
                 ✦
               </span>
-              Styn Hardin, BCBA
+              Kristyn Hardin, BCBA
             </span>
             <p
               style={{
@@ -86,7 +86,7 @@ export default function Footer() {
               fontSize: "0.8125rem",
             }}
           >
-            © {new Date().getFullYear()} Styn Hardin, BCBA. All rights
+            © {new Date().getFullYear()} Kristyn Hardin, BCBA. All rights
             reserved.
           </p>
           <p style={{ color: "var(--text-secondary)", fontSize: "0.8125rem" }}>
