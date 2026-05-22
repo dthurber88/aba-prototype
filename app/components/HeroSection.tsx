@@ -105,7 +105,7 @@ export default function HeroSection() {
           }}
         >
           {[
-            { value: "10+", label: "Years of Experience" },
+            { value: "15+", label: "Years of Experience" },
             { value: "100+", label: "Families Served" },
             { value: "BCBA", label: "Board Certified" },
           ].map(({ value, label }) => (
@@ -140,7 +140,7 @@ export default function HeroSection() {
       <div
         style={{
           position: "absolute",
-          bottom: "2rem",
+          bottom: ".75rem",
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",

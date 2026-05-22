@@ -11,7 +11,7 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "Kristyn Hardin, BCBA | ABA Therapy Services in Asheboro, North Carolina",
   description:
-    "Compassionate, evidence-based Applied Behavior Analysis therapy for children with autism spectrum disorder in Asheboro, North Carolina. Board Certified Behavior Analyst with 10+ years of experience.",
+    "Compassionate, evidence-based Applied Behavior Analysis therapy for children with autism spectrum disorder in Asheboro, North Carolina. Board Certified Behavior Analyst with 15+ years of experience.",
   keywords: [
     "ABA therapy",
     "BCBA",
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={geist.variable}>
+    <html lang="en" className={geist.variable} suppressHydrationWarning>
       <head>
         {/* Prevent theme flash on load */}
         <script

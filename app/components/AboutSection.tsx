@@ -1,7 +1,7 @@
 const CREDENTIALS = [
   { icon: "🎓", text: "Board Certified Behavior Analyst (BCBA)" },
   { icon: "📋", text: "Licensed Behavior Analyst, NC" },
-  { icon: "🏅", text: "10+ Years Clinical Experience" },
+  { icon: "🏅", text: "15+ Years Clinical Experience" },
   // { icon: "📚", text: "M.S. Applied Behavior Analysis, [University]" },
 ];
 
