@@ -66,8 +66,8 @@ export default function AboutSection() {
               <div
                 style={{
                   position: "relative",
-                  width: "280px",
-                  height: "340px",
+                  width: "380px",
+                  height: "220px",
                   borderRadius: "1.25rem",
                   background: "var(--bg-secondary)",
                   display: "flex",
@@ -76,18 +76,11 @@ export default function AboutSection() {
                   justifyContent: "center",
                   zIndex: 1,
                   gap: "0.75rem",
+                  overflow: "hidden",
+                  marginRight: "-1px"
                 }}
               >
-                <div style={{ fontSize: "4rem" }}>👩‍⚕️</div>
-                <p
-                  style={{
-                    color: "var(--text-secondary)",
-                    fontSize: "0.8125rem",
-                    fontWeight: 500,
-                  }}
-                >
-                  Photo Placeholder
-                </p>
+                <img src="/Pic_001.jpg" />
               </div>
             </div>
           </div>

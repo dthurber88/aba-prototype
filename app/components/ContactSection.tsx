@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Send, CheckCircle, MapPin, Phone, Mail, Clock, BookUser } from "lucide-react";
 import { SectionLabel } from "./AboutSection";
 
-type FormState = "idle" | "submitting" | "success";
+type FormState = "idle" | "submitting" | "success" | "error";
 
 const CONTACT_INFO = [
   { icon: MapPin, label: "Location", value: "Randolph County, North Carolina" },
@@ -32,10 +32,34 @@ export default function ContactSection() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("submitting");
-    setTimeout(() => setFormState("success"), 1200);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: "New Consultation - PlayABA Web Submission",
+          from_name: form.name,
+          email: form.email,
+          phone: form.phone,
+          preferred_contact: form.preferredContact,
+          message: form.message,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setFormState("success");
+      } else {
+        setFormState("error");
+      }
+    } catch {
+      setFormState("error");
+    }
   };
 
   const inputStyle: React.CSSProperties = {
@@ -228,6 +252,45 @@ export default function ContactSection() {
                   }}
                 >
                   Send another message
+                </button>
+              </div>
+            ) : formState === "error" ? (
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "1rem",
+                  padding: "2rem 0",
+                  textAlign: "center",
+                }}
+              >
+                <h3 style={{ color: "var(--text-primary)", fontWeight: 700, fontSize: "1.375rem" }}>
+                  Something went wrong
+                </h3>
+                <p style={{ color: "var(--text-secondary)", lineHeight: 1.7 }}>
+                  We couldn&apos;t send your message. Please try again or reach us
+                  directly at{" "}
+                  <a href="mailto:info@playabanc.com" style={{ color: "var(--accent-2)" }}>
+                    info@playabanc.com
+                  </a>
+                  .
+                </p>
+                <button
+                  onClick={() => setFormState("idle")}
+                  style={{
+                    marginTop: "0.5rem",
+                    padding: "0.6rem 1.5rem",
+                    borderRadius: "9999px",
+                    border: "1px solid var(--card-border)",
+                    background: "transparent",
+                    color: "var(--text-secondary)",
+                    cursor: "pointer",
+                    fontSize: "0.875rem",
+                  }}
+                >
+                  Try again
                 </button>
               </div>
             ) : (

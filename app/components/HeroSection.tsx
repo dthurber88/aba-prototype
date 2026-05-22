@@ -100,7 +100,7 @@ export default function HeroSection() {
             display: "flex",
             gap: "2.5rem",
             justifyContent: "center",
-            marginTop: "4rem",
+            marginTop: "2.5rem",
             flexWrap: "wrap",
           }}
         >

@@ -92,7 +92,7 @@ export default function Footer() {
           <p style={{ color: "var(--text-secondary)", fontSize: "0.8125rem" }}>
             BCBA #{" "}
             <span style={{ fontWeight: 600, color: "var(--text-primary)" }}>
-              [License #]
+              1:18:29881
             </span>
           </p>
         </div>
