@@ -80,7 +80,7 @@ export default function AboutSection() {
                   marginRight: "-1px"
                 }}
               >
-                <img src="/Pic_001.jpg" />
+                <img src="/Pic_001.jpg" alt="Kristyn Hardin, BCBA" width={1282} height={810} />
               </div>
             </div>
           </div>

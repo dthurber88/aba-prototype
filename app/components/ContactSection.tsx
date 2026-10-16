@@ -8,7 +8,7 @@ type FormState = "idle" | "submitting" | "success" | "error";
 
 const CONTACT_INFO = [
   { icon: MapPin, label: "Location", value: "Randolph County, North Carolina" },
-  { icon: Phone, label: "Phone", value: "(336) 953-3812" },
+  { icon: Phone, label: "Phone", value: "(336) 953-3812", href: "tel:+13369533812" },
   { icon: Mail, label: "Email", value: "info@playabanc.com" },
   { icon: Clock, label: "Response Time", value: "Within 24 business hours" },
   { icon: BookUser, label: "Facebook", value: "Follow us on Facebook!", href: "https://www.facebook.com/profile.php?id=100087543253864" },
@@ -166,8 +166,7 @@ export default function ContactSection() {
                     {href ? (
                       <a
                         href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        {...(href.startsWith("tel:") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                         style={{ color: "var(--accent-2)", fontSize: "0.9375rem", fontWeight: 500, textDecoration: "none" }}
                         onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
                         onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
@@ -301,7 +300,7 @@ export default function ContactSection() {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="[Parent / Guardian Name]"
+                    placeholder="Parent / Guardian Name"
                     style={inputStyle}
                     onFocus={(e) => {
                       e.target.style.borderColor = "var(--accent-2)";
@@ -340,7 +339,7 @@ export default function ContactSection() {
                       name="phone"
                       value={form.phone}
                       onChange={handleChange}
-                      placeholder="(XXX) XXX-XXXX"
+                      placeholder="(555) 555-5555"
                       style={inputStyle}
                       onFocus={(e) => {
                         e.target.style.borderColor = "var(--accent-2)";

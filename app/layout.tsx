@@ -9,6 +9,10 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.playabanc.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Kristyn Hardin, BCBA | ABA Therapy Services in Asheboro, North Carolina",
   description:
     "Compassionate, evidence-based Applied Behavior Analysis therapy for children with autism spectrum disorder in Asheboro, North Carolina. Board Certified Behavior Analyst with 15+ years of experience.",
@@ -27,8 +31,16 @@ export const metadata: Metadata = {
     title: "Kristyn Hardin, BCBA | ABA Therapy Services",
     description:
       "Compassionate, evidence-based ABA therapy for children in Asheboro, North Carolina.",
+    url: "/",
+    siteName: "Kristyn Hardin, BCBA",
     type: "website",
     locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "Kristyn Hardin, BCBA | ABA Therapy Services",
+    description:
+      "Compassionate, evidence-based ABA therapy for children in Asheboro, North Carolina.",
   },
 };
 

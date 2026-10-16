@@ -87,7 +87,7 @@ export default function ServicesSection() {
               margin: "0 auto",
             }}
           >
-            Every program is designed around your child's unique goals, delivered
+            Every program is designed around your child&apos;s unique goals, delivered
             in the environment where they thrive most.
           </p>
         </div>
