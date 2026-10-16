@@ -72,7 +72,7 @@ export default function HeroSection() {
             margin: "0 auto 2.5rem",
           }}
         >
-          Compassionate, evidence-based ABA therapy tailored to your child's
+          Compassionate, evidence-based ABA therapy tailored to your child&apos;s
           unique strengths — delivered in home, school, and community settings.
         </p>
 

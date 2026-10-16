@@ -21,6 +21,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const stored = localStorage.getItem("aba-theme") as Theme | null;
     if (stored === "playful" || stored === "spectrum") {
       applyTheme(stored);
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- sync stored theme after hydration
       setThemeState(stored);
     }
   }, []);
