@@ -131,7 +131,7 @@ export default function AboutSection() {
               }}
             >
               My approach centers on building meaningful skills in naturalistic
-              settings, celebrating every milestone — big and small — and
+              settings, celebrating every milestone, big and small, and
               partnering closely with families to carry progress into daily
               life.
             </p>

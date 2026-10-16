@@ -169,7 +169,7 @@ export default function ServicesSection() {
               marginBottom: "1.25rem",
             }}
           >
-            Not sure where to start? Let&apos;s talk — the first consultation is free.
+            Not sure where to start? Let&apos;s talk. The first consultation is free.
           </p>
           <a href="#contact" className="btn-rainbow">
             Schedule a Consultation

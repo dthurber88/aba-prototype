@@ -73,7 +73,7 @@ export default function HeroSection() {
           }}
         >
           Compassionate, evidence-based ABA therapy tailored to your child&apos;s
-          unique strengths — delivered in home, school, and community settings.
+          unique strengths, delivered in home, school, and community settings.
           We provide ABA therapy for children with autism in Asheboro and across
           Randolph County, and your first consultation is free.
         </p>
