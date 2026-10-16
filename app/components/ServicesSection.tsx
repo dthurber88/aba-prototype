@@ -87,8 +87,9 @@ export default function ServicesSection() {
               margin: "0 auto",
             }}
           >
-            Every program is designed around your child&apos;s unique goals, delivered
-            in the environment where they thrive most.
+            Every ABA therapy program for children with autism is designed around
+            your child&apos;s unique goals, delivered in the environment where
+            they thrive most.
           </p>
         </div>
 
@@ -168,7 +169,7 @@ export default function ServicesSection() {
               marginBottom: "1.25rem",
             }}
           >
-            Not sure where to start? Let&apos;s talk — the first consultation is free.
+            Not sure where to start? Let&apos;s talk. The first consultation is free.
           </p>
           <a href="#contact" className="btn-rainbow">
             Schedule a Consultation

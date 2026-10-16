@@ -13,24 +13,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "Kristyn Hardin, BCBA | ABA Therapy Services in Asheboro, North Carolina",
+  title:
+    "Autism Services & ABA Therapy in Asheboro and Randolph County, NC | Kristyn Hardin, BCBA",
   description:
-    "Compassionate, evidence-based Applied Behavior Analysis therapy for children with autism spectrum disorder in Asheboro, North Carolina. Board Certified Behavior Analyst with 15+ years of experience.",
-  keywords: [
-    "ABA therapy",
-    "BCBA",
-    "Applied Behavior Analysis",
-    "autism therapy",
-    "autism spectrum disorder",
-    "Asheboro",
-    "North Carolina",
-    "behavior analyst",
-    "child therapy",
-  ],
+    "ABA therapy for children with autism in Asheboro and Randolph County, NC. Kristyn Hardin, BCBA offers home, school and community support. Free consultation.",
   openGraph: {
-    title: "Kristyn Hardin, BCBA | ABA Therapy Services",
+    title: "Autism Services & ABA Therapy in Randolph County, NC | Kristyn Hardin, BCBA",
     description:
-      "Compassionate, evidence-based ABA therapy for children in Asheboro, North Carolina.",
+      "ABA therapy for children with autism in Asheboro and Randolph County, NC. Free first consultation.",
     url: "/",
     siteName: "Kristyn Hardin, BCBA",
     type: "website",
@@ -38,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Kristyn Hardin, BCBA | ABA Therapy Services",
+    title: "Autism Services & ABA Therapy in Randolph County, NC | Kristyn Hardin, BCBA",
     description:
-      "Compassionate, evidence-based ABA therapy for children in Asheboro, North Carolina.",
+      "ABA therapy for children with autism in Asheboro and Randolph County, NC. Free first consultation.",
   },
 };
 

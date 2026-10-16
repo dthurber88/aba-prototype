@@ -48,7 +48,9 @@ export default function HeroSection() {
             marginBottom: "1.5rem",
           }}
         >
-          Empowering Every Child
+          Empowering{" "}
+          <br />
+          <span style={{ whiteSpace: "nowrap" }}>Every Child</span>{" "}
           <br />
           <span
             style={{
@@ -73,7 +75,9 @@ export default function HeroSection() {
           }}
         >
           Compassionate, evidence-based ABA therapy tailored to your child&apos;s
-          unique strengths — delivered in home, school, and community settings.
+          unique strengths, delivered in home, school, and community settings.
+          We provide ABA therapy for children with autism in Asheboro and across
+          Randolph County, and your first consultation is free.
         </p>
 
         <div

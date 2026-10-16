@@ -107,7 +107,7 @@ export default function ContactSection() {
               margin: "0 auto",
             }}
           >
-            Reach out to schedule a free consultation — no commitment required.
+            Reach out to schedule a free consultation. No commitment required.
           </p>
         </div>
 
