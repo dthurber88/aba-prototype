@@ -42,13 +42,13 @@ export default function HeroSection() {
           style={{
             color: "#ffffff",
             fontWeight: 900,
-            fontSize: "clamp(2rem, 5vw, 3.5rem)",
+            fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
             lineHeight: 1.1,
             letterSpacing: "-0.03em",
-            marginBottom: "1rem",
+            marginBottom: "1.5rem",
           }}
         >
-          ABA Therapy for Children with Autism
+          Empowering Every Child
           <br />
           <span
             style={{
@@ -58,22 +58,9 @@ export default function HeroSection() {
               backgroundClip: "text",
             }}
           >
-            in Asheboro and Randolph County, NC
+            to Reach Their Potential
           </span>
         </h1>
-
-        <p
-          className="animate-fade-up-1"
-          style={{
-            color: "#ffffff",
-            fontWeight: 700,
-            fontSize: "clamp(1.125rem, 3vw, 1.5rem)",
-            lineHeight: 1.3,
-            marginBottom: "1rem",
-          }}
-        >
-          Empowering Every Child to Reach Their Potential
-        </p>
 
         <p
           className="animate-fade-up-2"
