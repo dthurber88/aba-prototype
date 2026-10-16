@@ -48,7 +48,9 @@ export default function HeroSection() {
             marginBottom: "1.5rem",
           }}
         >
-          Empowering Every Child
+          Empowering{" "}
+          <br />
+          <span style={{ whiteSpace: "nowrap" }}>Every Child</span>{" "}
           <br />
           <span
             style={{
