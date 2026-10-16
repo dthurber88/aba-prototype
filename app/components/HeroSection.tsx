@@ -42,13 +42,13 @@ export default function HeroSection() {
           style={{
             color: "#ffffff",
             fontWeight: 900,
-            fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
+            fontSize: "clamp(2rem, 5vw, 3.5rem)",
             lineHeight: 1.1,
             letterSpacing: "-0.03em",
-            marginBottom: "1.5rem",
+            marginBottom: "1rem",
           }}
         >
-          Empowering Every Child
+          ABA Therapy for Children with Autism
           <br />
           <span
             style={{
@@ -58,9 +58,22 @@ export default function HeroSection() {
               backgroundClip: "text",
             }}
           >
-            to Reach Their Potential
+            in Asheboro and Randolph County, NC
           </span>
         </h1>
+
+        <p
+          className="animate-fade-up-1"
+          style={{
+            color: "#ffffff",
+            fontWeight: 700,
+            fontSize: "clamp(1.125rem, 3vw, 1.5rem)",
+            lineHeight: 1.3,
+            marginBottom: "1rem",
+          }}
+        >
+          Empowering Every Child to Reach Their Potential
+        </p>
 
         <p
           className="animate-fade-up-2"
@@ -74,6 +87,8 @@ export default function HeroSection() {
         >
           Compassionate, evidence-based ABA therapy tailored to your child&apos;s
           unique strengths — delivered in home, school, and community settings.
+          We provide ABA therapy for children with autism in Asheboro and across
+          Randolph County, and your first consultation is free.
         </p>
 
         <div

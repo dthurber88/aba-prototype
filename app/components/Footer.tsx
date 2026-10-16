@@ -4,6 +4,15 @@ const LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
+// Edit this list to add or remove towns shown in the footer.
+const AREAS_SERVED = [
+  "Asheboro", "Archdale", "Randleman", "Liberty", "Ramseur", "Franklinville",
+  "Seagrove", "Trinity", "Staley", "Julian", "Sophia", "Level Cross",
+  "Cedar Falls", "High Point", "Thomasville", "Greensboro", "Pleasant Garden",
+  "Jamestown", "Denton", "Lexington", "Biscoe", "Star", "Troy", "Candor",
+  "Siler City", "Robbins", "Carthage",
+];
+
 export default function Footer() {
   return (
     <footer
@@ -66,6 +75,30 @@ export default function Footer() {
               </a>
             ))}
           </nav>
+        </div>
+
+        {/* Areas served */}
+        <div>
+          <h2
+            style={{
+              color: "var(--text-primary)",
+              fontWeight: 700,
+              fontSize: "0.875rem",
+              marginBottom: "0.25rem",
+            }}
+          >
+            Areas we serve
+          </h2>
+          <p
+            style={{
+              color: "var(--text-secondary)",
+              fontSize: "0.8125rem",
+              lineHeight: 1.6,
+            }}
+          >
+            {AREAS_SERVED.join(", ")} and surrounding communities in Randolph
+            County and the Piedmont Triad, NC.
+          </p>
         </div>
 
         {/* Bottom row */}
